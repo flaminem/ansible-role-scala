@@ -1,6 +1,6 @@
 ---
  - include: Debian.yml
-   when: ansible_os_family == 'Debian' and scala_sbt_force_generic != true
+   when: ansible_os_family in ['Debian','Linuxmint'] and scala_sbt_force_generic != true
  - include: RedHat.yml
    when: ansible_os_family == 'RedHat' and scala_sbt_force_generic != true
  - include: Generic.sbt.yml

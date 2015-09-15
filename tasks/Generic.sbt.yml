@@ -19,7 +19,7 @@
 - name: Unarchive sbt
   unarchive:
     src="{{scala_sbt_tmp_zip}}"
-    dest="{{scala_sbt_install_dir}}/{{scala_sbt_version}}/"
+    dest="{{scala_sbt_install_dir}}/{{scala_sbt_version}}"
     copy=false
   tags: ["packages","scala"]
 
